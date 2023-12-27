@@ -1,0 +1,261 @@
+
+@font-face {
+  font-family: Artifica;
+  src: url("Artifika-Regular.ttf") format("truetype");
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header img{
+  width: 100%;
+  display: block;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.title h1{
+  position: relative;
+  font-size: 65px;
+  color: crimson;
+  display: grid;
+  font-family: "Artifica";
+  max-height: 20px;
+}
+.title{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.title img{
+  width: 100px;
+  margin-top: 70px;
+}
+hr{
+  align-self: center;
+  margin-bottom: 50px;
+  height:4px;
+  border-width:0;
+  width: 60%;
+  color:crimson;
+  background-color:crimson;
+}
+
+.test{
+  flex-direction: column;
+}
+
+.article{
+  margin-left: 8%;
+  font-family: Artifica;
+  margin-right: 5%;
+}
+.categorie-1 h2{
+  position: relative;
+  font-size: 45px;
+  color: forestgreen;
+  display: grid;
+  font-family: "Artifica";
+  max-height: 20px;
+  margin-bottom: 100px;
+  display: grid;
+}
+
+.products-list{
+  flex-direction: row;
+  display: flex;
+}
+.products-info-name{
+  flex-direction: row;
+  display: flex;
+}
+.products-info-name h2{
+  width: 36%;
+  font-size: 35px;
+  display: grid;
+  font-family: "Artifica";
+  margin-bottom: 8px;
+  margin-right: 200px;
+  color: crimson;
+}
+.products-info-price{
+  flex-direction: row;
+  display: flex;
+}
+.products-info-price h2{
+  width: 36%;
+  font-size: 30px;
+  color: forestgreen;
+  display: grid;
+  font-family: "Artifica";
+  margin-bottom: 50px;
+  margin-right: 200px;
+}
+.voirPlus {
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.voirPlus a{
+  color: red;
+  font-size: 20px;
+}
+.card {
+  margin-right: 50px;
+  position: relative;
+  width: 33%;
+  height: 250px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card img {
+  width: 100%;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 25%;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+
+
+.contact-container{
+  max-width: 960px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  overflow: hidden;
+  background: darkred;
+  border-radius: 28px;
+
+}
+
+.form-container{
+  padding: 50px;
+}
+
+.form-container h3{
+  position: relative;
+  text-align: center;
+  font-size: 19.2px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #f2f2f2;
+}
+
+.contact-form{
+  display: grid;
+  row-gap: 16px;
+}
+.contact-container h1{
+  position: absolute;
+  width: 100%;
+  margin-left: 25%;
+  font-size: 30px;
+  font-family: Artifica;
+  color: white;
+
+}
+.contact-form input, .contact-form textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #FFF;
+  padding: 10px;
+  font-size: 14.4px;
+  color: black;
+  border-radius: 6.4px;
+}
+
+.contact-form textarea{
+  resize: none;
+  height: 100px;
+}
+.contact-form .send-button {
+  width: 105%;
+  border: none;
+  outline: none;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 6.4px;
+  padding: 10px;
+}
+.contact-form .send-button:hover{
+  background: crimson;
+  transition: 0.3s all linear;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: black;
+}
+.map img{
+  margin-left: 115px;
+  margin-top: 130px;
+  width: 200px;
+}
+.footer{
+  margin-bottom: 50px;
+}
